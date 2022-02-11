@@ -1,0 +1,155 @@
+pseudo-code guess number
+
+
+DO-WHILE (beginning) boolean stop condition equals true
+
+    DISPLAY Wellcome to the game
+    DISPLAY game difficulty options very easy, easy, medium, hard, very, hard
+
+
+    OBTAIN user s difficulty choise.
+
+    if user s difficulty choise equals very easy 
+        DETERMINE random number betwen 1 and 10
+            DISPLAY enter you answer
+            OBTAIN user s answer
+
+                WHILE user s answer is not equal to random number
+                if user s answer is bigger than random number
+                    DISPLAY try a lower number
+                    DISPLAY enter you answer
+                    OBTAIN user s answer
+
+                else if user s answer is smaller than random number
+                    DISPLAY try a higher number
+                    DISPLAY enter you answer
+                    OBTAIN user s answer
+                end WHILE
+
+ 
+    else if user s difficulty choise equals easy 
+            DETERMINE random number betwen 1 and 10
+            DISPLAY enter you answer
+            OBTAIN user s answer
+            FOR initiate i at 0 , user s answer not equal to random number, i smaller or equal to 5 
+                if user s answer is bigger than random number
+                    DISPLAY try a lower number
+                    DISPLAY enter you answer
+                    OBTAIN user s answer
+                    i augments by 1
+                else if user s answer is smaller than random number
+                    DISPLAY try a higher number
+                    DISPLAY enter you answer
+                    OBTAIN user s answer
+                    i augments by 1
+            end FOR
+            if user s answer equals random number 
+                DISPLAY you win!!
+                DISPLAY play again (yes or no)
+                OBTAIN user s answer 
+                if user s answer equals yes
+                    boolean stop equals false
+
+
+
+
+    else if  user s difficulty choise equals medium
+            DETERMINE random number betwen 1 and 100
+            DISPLAY enter you answer
+            OBTAIN user s answer
+                FOR initiate i at 0 , user s answer not equal to random number, i smaller or equal to 5 
+                    if user s answer is bigger than random number
+                        DISPLAY try a lower number
+                        DISPLAY enter you answer
+                        OBTAIN user s answer
+                        i augments by 1
+                    else if user s answer is smaller than random number
+                        DISPLAY try a higher number
+                        DISPLAY enter you answer
+                        OBTAIN user s answer
+                        i augments by 1
+                        if i equals 5 
+                            DISPLAY you lose!
+                            DISPLAY play again (yes or no)
+                            OBTAIN user s answer 
+                                if user s answer equals yes
+                                    boolean stop equals false
+                end FOR
+
+            if user s answer equals random number 
+                DISPLAY you win!!
+                DISPLAY play again (yes or no)
+                OBTAIN user s answer 
+                if user s answer equals yes
+                    boolean stop equals false
+
+        else if  user s difficulty choise equals hard
+                DETERMINE random number betwen 1 and 500
+            DISPLAY enter you answer
+            OBTAIN user s answer
+                FOR initiate i at 0 , user s answer not equal to random number, i smaller or equal to  8
+                    if user s answer is bigger than random number
+                        DISPLAY try a lower number
+                        DISPLAY enter you answer
+                        OBTAIN user s answer
+                        i augments by 1
+                    else if user s answer is smaller than random number
+                        DISPLAY try a higher number
+                        DISPLAY enter you answer
+                        OBTAIN user s answer
+                        i augments by 1
+                        if i equals 8 
+                            DISPLAY you lose!
+                            DISPLAY play again (yes or no)
+                            OBTAIN user s answer 
+                                if user s answer equals yes
+                                    boolean stop equals false
+                end FOR
+                
+            if user s answer equals random number 
+                DISPLAY you win!!
+                DISPLAY play again (yes or no)
+                OBTAIN user s answer 
+                if user s answer equals yes
+                    boolean stop equals false
+
+        else if  user s difficulty choise equals hardest
+                DETERMINE random number betwen 1 and 1000
+                DISPLAY enter you answer
+                OBTAIN user s answer
+                FOR initiate i at 0 , user s answer not equal to random number, i smaller or equal to  9
+                    if user s answer is bigger than random number
+                        DISPLAY try a lower number
+                        DISPLAY enter you answer
+                        OBTAIN user s answer
+                        i augments by 1
+                    else if user s answer is smaller than random number
+                        DISPLAY try a higher number
+                        DISPLAY enter you answer
+                        OBTAIN user s answer
+                        i augments by 1
+                        if i equals 9
+                            DISPLAY you lose!
+                            DISPLAY play again (yes or no)
+                            OBTAIN user s answer 
+                                if user s answer equals yes
+                                    boolean stop equals false
+
+
+                end FOR
+                
+            if user s answer equals random number 
+                DISPLAY you win!!
+                DISPLAY play again (yes or no)
+                OBTAIN user s answer
+
+                    if user s answer equals yes
+                    boolean stop equals false
+
+                    else if user s answer equals no 
+                    boolean stop equals true
+
+                    endif
+        endif
+    end WHILE 
+    DISPLAY thanks for playing 
